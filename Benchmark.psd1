@@ -14,10 +14,11 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    # RootModule = ''
+    # For PSv2 compatibility I'm not using RootModule...
+    ModuleToProcess  = 'Benchmark.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.2.2.1'
+    ModuleVersion = '1.2.2.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -113,7 +114,7 @@
 
             # ReleaseNotes of this module
             ReleaseNotes = '
-    * Fix module metadata.
+    * Fix module metadata for real.
     * Minor polishing (OCD-like).'
 
             # External dependent modules of this module
