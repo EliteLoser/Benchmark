@@ -6,3 +6,8 @@ Online blog documentation: https://www.powershelladmin.com/wiki/PowerShell_bench
 
 PowerShell Gallery (Save-Module/Find-Module/Install-Module): https://www.powershellgallery.com/packages/Benchmark/
 
+Example to install:
+
+```powershell
+Install-Module -Name Benchmark -Scope CurrentUser #-Force
+```
