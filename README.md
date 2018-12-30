@@ -11,3 +11,7 @@ Example to install:
 ```powershell
 Install-Module -Name Benchmark -Scope CurrentUser #-Force
 ```
+
+Example use in a screen dump:
+
+![alt_tag](/img/Benchmark-Measure-These-example.png)
