@@ -29,7 +29,8 @@ PS C:\temp> & $ArrayIndexingSB
 3
 PS C:\temp> Compare-Object (&$SelectObjectSB) (&$ArrayIndexingSB)
 PS C:\temp> # they do the same thing, let's see which one is faster at it...
-PS C:\temp> Measure-These -Count 1, 10, 1000 -ScriptBlock $SelectObjectSB, $ArrayIndexingSB -Title   "Select-Object", "Array indexing" | Format-Table -AutoSize
+PS C:\temp> Measure-These -Count 1, 10, 1000 -ScriptBlock $SelectObjectSB, $ArrayIndexingSB `
+-Title "Select-Object", "Array indexing" | Format-Table -AutoSize
 
 Title/no.      Average (ms) Count Sum (ms) Maximum (ms) Minimum (ms)
 ---------      ------------ ----- -------- ------------ ------------
@@ -41,7 +42,8 @@ Select-Object       0.08741  1000  87.4112       0.2455       0.0807
 Array indexing      0.01461  1000  14.6114       2.2528       0.0106
 
 
-PS C:\temp> Measure-These -Count 1, 10, 1000 -ScriptBlock $SelectObjectSB, $ArrayIndexingSB -Title   "Select-Object", "Array indexing" | Format-Table -AutoSize
+PS C:\temp> Measure-These -Count 1, 10, 1000 -ScriptBlock $SelectObjectSB, $ArrayIndexingSB `
+-Title "Select-Object", "Array indexing" | Format-Table -AutoSize
 
 Title/no.      Average (ms) Count Sum (ms) Maximum (ms) Minimum (ms)
 ---------      ------------ ----- -------- ------------ ------------
